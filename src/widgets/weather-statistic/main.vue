@@ -18,20 +18,32 @@
         Динамика
       </Card>
     </div>
-
   </div>
 </template>
-<script setup lang="ts">
+<script lang="ts" setup>
 import Card from '@/shared/ui/card/index.vue';
 
 defineOptions({
   name: 'WeatherStatistics',
 });
+
+enum EStatus {
+  'pending',
+}
+
+const status = ref(2);
+
+
+const fetchWeatherStatistic = () => {
+
+}
+
 </script>
 <style scoped>
 .weather-statistic--head {
   border-bottom: 1px solid #B3D1FE;
 }
+
 .weather-statistic--head-container {
   padding: 16px;
 }
