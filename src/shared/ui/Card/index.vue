@@ -3,7 +3,7 @@
     <slot></slot>
   </div>
 </template>
-<script setup lang="ts">
+<script lang="ts" setup>
 
 defineOptions({
   name: 'Card',
@@ -17,7 +17,9 @@ defineOptions({
   background: rgba(244, 244, 245, 0.8);
   border-radius: 12px;
 }
+
 .card--white {
   background: #ffffff;
 }
+
 </style>
